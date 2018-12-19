@@ -1,0 +1,23 @@
+{
+    "name": "subdesign/laravel-gdpr-nullify",
+    "description": "Easily nullify user data for GDPR compilance",
+    "keywords": ["laravel", "gdpr"],
+    "homepage": "https://github.com/subdesign/laravel-gdpr-nullify",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Barna Szalai",
+            "email": "szalai.b@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/dbal": "^2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Subdesign\\LaravelGdprNullify\\": "src/"
+        }        
+    },
+    "minimum-stability": "stable"    
+}
