@@ -2,7 +2,7 @@
 
 If you are affected by GDPR, you may find yourself in situation, when someone ask you to delete his/her data. You don't need to delete their records, just hide the sensible fields. This way your database remains consistent (eg. for history, statistics) but you finally satisfy the request.
 
-With this package you can easily "nullify" specific fields for any Eloqent Model.
+With this package you can easily "nullify" specific fields for any Eloquent Model.
 
 ## Requirements
 
@@ -17,7 +17,7 @@ composer require subdesign/laravel-gdpr-nullify:^1.0.0
 
 ## Setup
 
-Add the following trait to you Eloquent model
+Add the following trait to your Eloquent model
 
 ```php
 use Subdesign\LaravelGdprNullify\GdprNullifyTrait;
@@ -47,7 +47,7 @@ $user = App\User::find(1);
 $user->nullify();
 ```
 
-In the example, the `name` and `email` fields will be filled with random characters in the length of the database field.
+In the example, the `name` and `email` fields will be filled with random characters in the length of the database fields.
 
 ## Dependency
 
